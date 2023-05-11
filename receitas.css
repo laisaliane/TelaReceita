@@ -2,23 +2,80 @@
 
 body {
     margin: 0;
-    }
-.cabecalho{
-    background-color: #19A7CE;
-    color: #000000;
-    font-size: 32px;
     font-family: 'Inter', sans-serif;
 }
 
-.cabecalho div {
-    display: inline-block;
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1b99c7;
 }
 
+
 .logo {
-    width: 250px;
-    height: 150px;
-    padding: 25px 45px 0;
+    width: 100px;
+    display: flex;
 }
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px;
+  }
+  
+  span a {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  
+  .search{
+    padding-left: 11rem;
+  }
+  
+  .search :hover {
+    color: gray;
+    cursor: pointer;
+  }
+  
+  .favoritos :hover {
+    color: gray;
+    cursor: pointer;
+  }
+  
+  .favoritos{
+    display: flex;
+    align-items: center;
+  }
+  
+  .login a {
+    background-color: #333;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 2px;
+    text-decoration: none;
+  }
+  
+  .search input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+   button {
+    background-color: #333;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 2px;
+  }
 
 .titulo {
     padding-left: 45px;
@@ -26,18 +83,22 @@ body {
 }
 
 #busca {
+    display: flex;
+    align-items: center;
+    margin: 10px;
 }
 
 #txtbusca {
     display: inline-block;
     background-color: transparent;
-    padding-left: 5px;
+    padding-left: 30px;
     font-style: italic;
     font-size: 18px;
     border: 1px solid black;
     color: #fff;
-    height: 32px;
-    width: 260px;
+    height: 45px;
+    width: 370px;
+    border-radius: 15px;
 }
 
 .barrafavoritos {
@@ -52,9 +113,9 @@ body {
 }
 
 .favoritos {
-   font-size: 32px;
-   font-family: 'Inter', sans-serif;
-   padding-left: 50px;
+    font-size: 32px;
+    font-family: 'Inter', sans-serif;
+    padding-left: 50px;
 }
 
 .coracao {
@@ -84,11 +145,11 @@ body {
 
 .ingredientes {
     font-size: 28px;
-    font-family: 'Inter', sans-serif;
     margin-left: 15px;
 }
-ul, il {
-    font-family: 'Inter', sans-serif;
+
+ul,
+il {
     margin-left: 40px;
     font-size: 22px;
     line-height: 1.5;
@@ -97,7 +158,6 @@ ul, il {
 
 .preparo {
     font-size: 24px;
-    font-family: 'Inter', sans-serif;
     text-align: justify;
     padding-top: 20px;
     padding-left: 10px;
@@ -107,13 +167,11 @@ ul, il {
 .preparo__text {
     line-height: 1.5;
     padding-top: 10px;
-    font-family: 'Inter', sans-serif;
 }
 
 .titulo__receitas {
     font-size: 24px;
     margin: 20px 0 20px;
-    font-family: 'Inter', sans-serif;
 }
 
 .footer {
@@ -130,11 +188,9 @@ ul, il {
 
 .gastrite {
     font-size: 30px;
-    font-family: 'Inter', sans-serif;
 }
 
 p {
     font-size: 23px;
     text-align: justify;
-    font-family: 'Inter', sans-serif;
 }
